@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AIIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AIIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tata.self_healing.ai.html">com.tata.self_healing.ai</a> &gt; AIIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">3</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.506s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Failed tests</a>
+</li>
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testAIAnalysisEndpoint()"></a>
+<h3 class="failures">testAIAnalysisEndpoint()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No value at JSON path &quot;$.success&quot;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.tata.self_healing.ai.AIIntegrationTest.testAIAnalysisEndpoint(AIIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.jayway.jsonpath.internal.Utils.notEmpty(Utils.java:401)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:390)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)
+	... 7 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testAutomatedHealingEndpoint()"></a>
+<h3 class="failures">testAutomatedHealingEndpoint()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No value at JSON path &quot;$.success&quot;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.tata.self_healing.ai.AIIntegrationTest.testAutomatedHealingEndpoint(AIIntegrationTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.jayway.jsonpath.internal.Utils.notEmpty(Utils.java:401)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:390)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)
+	... 7 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testCustomAIAnalysis()"></a>
+<h3 class="failures">testCustomAIAnalysis()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No value at JSON path &quot;$.success&quot;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.tata.self_healing.ai.AIIntegrationTest.testCustomAIAnalysis(AIIntegrationTest.java:92)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.jayway.jsonpath.internal.Utils.notEmpty(Utils.java:401)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:390)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)
+	... 7 more
+</pre>
+</span>
+</div>
+</div>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testAIAnalysisEndpoint()</td>
+<td class="failures">0.009s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testAIHealthEndpoint()</td>
+<td class="success">0.477s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAIStatisticsEndpoint()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testAutomatedHealingEndpoint()</td>
+<td class="failures">0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testCustomAIAnalysis()</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testHealingHistoryEndpoint()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.449861+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;org.hibernate.validator.internal.util.Version&quot;,&quot;message&quot;:&quot;HV000001: Hibernate Validator 8.0.1.Final&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.463476+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.AIIntegrationTest&quot;,&quot;message&quot;:&quot;Starting AIIntegrationTest using Java 21.0.7 with PID 28288 (started by abhisheksingh2 in /Users/abhisheksingh2/Downloads/self_healing)&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.463985+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.AIIntegrationTest&quot;,&quot;message&quot;:&quot;No active profile set, falling back to 1 default profile: \&quot;default\&quot;&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.987424+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.mock.web.SpringBootMockServletContext&quot;,&quot;message&quot;:&quot;Initializing Spring TestDispatcherServlet ''&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.98777+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;message&quot;:&quot;Initializing Servlet ''&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.991162+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver&quot;,&quot;message&quot;:&quot;Exposing 3 endpoints beneath base path '/actuator'&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:03.994503+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;message&quot;:&quot;Completed initialization in 7 ms&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.016001+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.AIIntegrationTest&quot;,&quot;message&quot;:&quot;Started AIIntegrationTest in 0.723 seconds (process running for 1.35)&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.493036+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: GET /api/v1/ai/health from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;31a1e652-97b1-44a4-8af0-1ccc4641fce1&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.496656+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;GET /api/v1/ai/health - Checking AI system health&quot;,&quot;correlationId&quot;:&quot;31a1e652-97b1-44a4-8af0-1ccc4641fce1&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.497023+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;AI system health check completed&quot;,&quot;correlationId&quot;:&quot;31a1e652-97b1-44a4-8af0-1ccc4641fce1&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.516914+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request completed: GET /api/v1/ai/health - Status: 200 - Duration: 23ms&quot;,&quot;correlationId&quot;:&quot;31a1e652-97b1-44a4-8af0-1ccc4641fce1&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.534971+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: GET /api/v1/ai/healing-history from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;df4b7bbd-a5e1-4532-a39f-2fc6138d24ea&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.538198+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;GET /api/v1/ai/healing-history - Retrieving healing history (limit: 5)&quot;,&quot;correlationId&quot;:&quot;df4b7bbd-a5e1-4532-a39f-2fc6138d24ea&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.539201+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;Successfully retrieved 0 healing executions&quot;,&quot;correlationId&quot;:&quot;df4b7bbd-a5e1-4532-a39f-2fc6138d24ea&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.540322+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request completed: GET /api/v1/ai/healing-history - Status: 200 - Duration: 5ms&quot;,&quot;correlationId&quot;:&quot;df4b7bbd-a5e1-4532-a39f-2fc6138d24ea&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.544134+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: POST /api/v1/ai/analyze from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;a7fd5e26-7a10-48b5-a92c-2b8624cee8b3&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.544558+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;POST /api/v1/ai/analyze - Triggering AI analysis&quot;,&quot;correlationId&quot;:&quot;a7fd5e26-7a10-48b5-a92c-2b8624cee8b3&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.545341+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Starting GenAI analysis for 0 error insights&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.545618+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Calling JAMVANT via Ollama API: http://localhost:11434/api/chat&quot;}
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/ai/analyze
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tata.self_healing.controller.AIController
+           Method = com.tata.self_healing.controller.AIController#triggerAIAnalysis()
+
+Async:
+    Async started = true
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Correlation-ID:&quot;a7fd5e26-7a10-48b5-a92c-2b8624cee8b3&quot;, Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.553762+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: GET /api/v1/ai/statistics from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;f8825b09-8556-4d6a-b5c5-350e61ade9cf&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.553964+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;GET /api/v1/ai/statistics - Retrieving AI system statistics&quot;,&quot;correlationId&quot;:&quot;f8825b09-8556-4d6a-b5c5-350e61ade9cf&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.554183+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;Successfully retrieved AI system statistics&quot;,&quot;correlationId&quot;:&quot;f8825b09-8556-4d6a-b5c5-350e61ade9cf&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.55583+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request completed: GET /api/v1/ai/statistics - Status: 200 - Duration: 2ms&quot;,&quot;correlationId&quot;:&quot;f8825b09-8556-4d6a-b5c5-350e61ade9cf&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.558323+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: POST /api/v1/ai/test-analysis from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;270b3d97-f674-4dc5-a3b6-f6f87f22bc3e&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.558902+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;POST /api/v1/ai/test-analysis - Testing AI analysis with custom scenario&quot;,&quot;correlationId&quot;:&quot;270b3d97-f674-4dc5-a3b6-f6f87f22bc3e&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.559569+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Starting GenAI analysis for 1 error insights&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.559964+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Calling JAMVANT via Ollama API: http://localhost:11434/api/chat&quot;}
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/ai/test-analysis
+       Parameters = {errorType=[TEST_ERROR], errorMessage=[Test error for AI analysis], severity=[HIGH]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tata.self_healing.controller.AIController
+           Method = com.tata.self_healing.controller.AIController#testAIAnalysis(String, String, String)
+
+Async:
+    Async started = true
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Correlation-ID:&quot;270b3d97-f674-4dc5-a3b6-f6f87f22bc3e&quot;, Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.563044+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.monitoring.RequestMonitoringInterceptor&quot;,&quot;message&quot;:&quot;Request started: POST /api/v1/ai/heal from IP: 127.0.0.1&quot;,&quot;correlationId&quot;:&quot;191cc6be-a3cb-4bb5-96f1-35ee671d7779&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.563266+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.controller.AIController&quot;,&quot;message&quot;:&quot;POST /api/v1/ai/heal - Executing automated healing&quot;,&quot;correlationId&quot;:&quot;191cc6be-a3cb-4bb5-96f1-35ee671d7779&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.563485+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Starting GenAI analysis for 0 error insights&quot;}
+{&quot;@timestamp&quot;:&quot;2025-09-13T16:47:04.563763+05:30&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;logger_name&quot;:&quot;com.tata.self_healing.ai.GenAIAnalysisService&quot;,&quot;message&quot;:&quot;Calling JAMVANT via Ollama API: http://localhost:11434/api/chat&quot;}
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/ai/heal
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tata.self_healing.controller.AIController
+           Method = com.tata.self_healing.controller.AIController#executeAutomatedHealing()
+
+Async:
+    Async started = true
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Correlation-ID:&quot;191cc6be-a3cb-4bb5-96f1-35ee671d7779&quot;, Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/abhisheksingh2/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.18/417558ea01fe9f0e8a94af28b9469d281c4e3984/byte-buddy-agent-1.14.18.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 13-Sept-2025, 4:47:05 pm</p>
+</div>
+</div>
+</body>
+</html>
